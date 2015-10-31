@@ -11,9 +11,9 @@ angular.module('gwJpmc8App')
   .factory('user', function($http) {
     $http({
       method: 'GET',
-      url: 'http://ec2-23-23-54-42.compute-1.amazonaws.com/user'
+      url: 'http://ec2-23-23-54-42.compute-1.amazonaws.com:8080/user'
     }).then(function successCallback(response) {
-      console.log(response);
+      //console.log(response);
     }, function errorCallback(response) {
       // called asynchronously if an error occurs
       // or server returns response with an error status.
