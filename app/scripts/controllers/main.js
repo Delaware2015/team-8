@@ -14,4 +14,13 @@ angular.module('gwJpmc8App')
       'AngularJS',
       'Karma'
     ];
+
+    for(var i=1; i<=24; i++){
+	    var select = document.getElementById("hours");
+	    var option = document.createElement("OPTION");
+		select.options.add(option);
+		option.text = i;
+		option.value = i;
+	}
+	
   });
