@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RestController
 public class UserController {
 
-    @RequestMapping(value = "/User", method = RequestMethod.GET)
+    @RequestMapping(value = "/user", method = RequestMethod.GET)
     public User user(@RequestParam(value="email", defaultValue="foo@bar.com") String email,
     						 @RequestParam(value="name", defaultValue="bob") String name,
     						 @RequestParam(value="address", defaultValue="n/a") String address,
