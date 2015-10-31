@@ -10,6 +10,9 @@
 angular.module('gwJpmc8App')
 	.controller('MainCtrl', function($scope, user, $http) {
 		var dress = "dress";
+		var i = 1;
+
+		
 
 		
 		
@@ -18,25 +21,25 @@ angular.module('gwJpmc8App')
 
 
 		$scope.addDress = function() {
+
 			
-			var i = 1;
 			$scope.laundreyList.push("dress" + i++);
 			console.log("dress added");
 			console.log($scope.laundreyList);
 		}
 
 		$scope.addBottoms = function() {
-			var i = 1;
+			
 			$scope.laundreyList.push("Bottoms" + i++);
 		}
 
 		$scope.addTop = function() {
-			var i = 1;
+			
 			$scope.laundreyList.push("Top" + i++);
 		}
 
 		$scope.addShoes = function() {
-			var i = 1;
+			
 			$scope.laundreyList.push("Shoes" + i++);
 		}
 		console.log("testing");

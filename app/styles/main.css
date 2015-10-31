@@ -4,6 +4,11 @@
   color: #000;
   padding: 0.2em 0;
 }
+.itemlist {
+  background: #55B6AE;
+  width: 50%;
+  
+}
 
 body {
   padding: 0;

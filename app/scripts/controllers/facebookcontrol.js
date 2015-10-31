@@ -1,48 +1,30 @@
-var app = angular.module('gwJpmc8App', ['ezfb', 'ngRoute'])
+'use strict';
 
-.constant('SOCIAL_PLUGINS', [
-  'like', 'share-button', 'send', 'post', 'video', 
-  'comments', 'page', 'follow'
-])
+/**
+ * @ngdoc function
+ * @name gwJpmc8App.controller:FacebookcontrolCtrl
+ * @description
+ * # FacebookcontrolCtrl
+ * Controller of the gwJpmc8App
+ */
+angular.module('gwJpmc8App')
+  .controller('FacebookcontrolCtrl', function () {
+    this.awesomeThings = [
+      'HTML5 Boilerplate',
+      'AngularJS',
+      'Karma'
+    ];
+    js.src = '//connect.facebook.net/en_US/sdk.js'
 
-.config(function (ezfbProvider, $routeProvider, SOCIAL_PLUGINS) {
-  ezfbProvider.setInitParams({
-    appId: '680945075374563',
-    version: 'v2.3'
-  });
-  
-  $routeProvider.otherwise({redirectTo: '/video'});
-  
-  angular.forEach(SOCIAL_PLUGINS, function (dirTag) {
-    var routeName = dirTag;
+    $window.fbAsyncInit = function () {
+    	FB.init({
+    		appId: '{your-app-id}',
+    		status: true,
+    		cookie: true,
+    		xfbml: true,
+    		version: 'v2.4'
+    	});
+    };
     
-    $routeProvider
-    .when('/' + routeName, {
-      templateUrl: routeName + '.html'
-    });
   });
-})
 
-.controller('facebookCtrl', function ($scope, $route, SOCIAL_PLUGINS, $location) {
-  $scope.SOCIAL_PLUGINS = SOCIAL_PLUGINS;
-  
-  $scope.pluginOn = true;
-  $scope.rendering = false;
-  
-  $scope.goto = function (dirTag) {
-    $location.path('/' + dirTag);
-  };
-  
-  $scope.isActive = function (dirTag) {
-    return ($location.path() === '/' + dirTag);
-  };
-  
-  $scope.rendered = function () {
-    $scope.rendering = false;
-  };
-  
-  $scope.$watch('pluginOn', function (newVal, oldVal) { 
-    if (newVal !== oldVal) {
-      $scope.rendering = true;
-    }
-  });
