@@ -24,25 +24,28 @@ angular.module('gwJpmc8App')
   	function Shoes() {
 
   	}
-  	
+
   	$scope.laundreyList = [];
 
 
-  	$scope.addDress() {
+  	$scope.addDress = function () {
   		$scope.laundreyList.push(new Dress());
+  		console.log("dress added");
+  		console.log($scope.laundreyList);
   	}
 
-  	$scope.addBottoms() {
+  	$scope.addBottoms = function () {
   		$scope.laundreyList.push(new Bottoms);
   	}
 
-  	$scope.addTop() {
+  	$scope.addTop = function() {
   		$scope.laundreyList.push(new Top);
   	}
 
-  	$scope.addShoes() {
+  	$scope.addShoes = function() {
   		$scope.laundreyList.push(new Shoes);
   	}
+  	console.log("testing");
 
     this.awesomeThings = [
       'HTML5 Boilerplate',
