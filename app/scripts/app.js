@@ -15,7 +15,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ezfb'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -31,7 +32,7 @@ angular
       })
       .when('/user', {
         templateUrl: 'views/user.html',
-        controller: 'MainCtrl',
+        controller: 'facebookCtrl',
         controllerAs: 'user'
       })
       .otherwise({
