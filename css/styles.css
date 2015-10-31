@@ -3,13 +3,16 @@ html,body {
 }
 
 h1 {
-  font-family: Arial,sans-serif
+  font-family: Times,sans-serif
   font-size:80px;
   color:#FFFFFF;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .lead {
+  font-size: 35px; 
 	color:#FFFFFF;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 
@@ -26,6 +29,7 @@ h1 {
 .container-full a {
   color:#efefef;
   text-decoration:none;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .v-center {
