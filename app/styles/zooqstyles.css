@@ -3,7 +3,7 @@ html,body {
 }
 
 h1 {
-  font-family: Times,sans-serif
+  font-family: Times, sans-serif;
   font-size:80px;
   color:#FFFFFF;
   text-shadow: 2px 2px 4px #000000;
