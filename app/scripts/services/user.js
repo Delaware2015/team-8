@@ -11,7 +11,7 @@ angular.module('gwJpmc8App')
   .factory('user', function($http) {
     $http({
       method: 'GET',
-      url: 'http://localhost:8080/user'
+      url: 'http://ec2-23-23-54-42.compute-1.amazonaws.com/user'
     }).then(function successCallback(response) {
       console.log(response);
     }, function errorCallback(response) {
