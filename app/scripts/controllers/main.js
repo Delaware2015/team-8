@@ -8,53 +8,43 @@
  * Controller of the gwJpmc8App
  */
 angular.module('gwJpmc8App')
-  .controller('MainCtrl', function ($scope, user) {
-  	var dress = "dress";
-  	
-  	function Dress() {
-  		
-  	}
+	.controller('MainCtrl', function($scope, user, $http) {
+		var dress = "dress";
 
-  	function Bottoms(){
+		
+		
 
-  	}
-  	function Top() {
-
-  	}
-
-  	function Shoes() {
-
-  	}
-
-  	$scope.laundreyList = [];
+		$scope.laundreyList = [];
 
 
-  	$scope.addDress = function () {
-  		var i = 1;
-  		$scope.laundreyList.push("dress" + i++);
-  		console.log("dress added");
-  		console.log($scope.laundreyList);
-  	}
+		$scope.addDress = function() {
+			
+			var i = 1;
+			$scope.laundreyList.push("dress" + i++);
+			console.log("dress added");
+			console.log($scope.laundreyList);
+		}
 
-  	$scope.addBottoms = function () {
-  		var i = 1;
-  		$scope.laundreyList.push("Bottoms" + i++);
-  	}
+		$scope.addBottoms = function() {
+			var i = 1;
+			$scope.laundreyList.push("Bottoms" + i++);
+		}
 
-  	$scope.addTop = function() {
-  		var i = 1;
-  		$scope.laundreyList.push("Top" + i++);
-  	}
+		$scope.addTop = function() {
+			var i = 1;
+			$scope.laundreyList.push("Top" + i++);
+		}
 
-  	$scope.addShoes = function() {
-  		var i = 1;
-  		$scope.laundreyList.push("Shoes" + i++);
-  	}
-  	console.log("testing");
+		$scope.addShoes = function() {
+			var i = 1;
+			$scope.laundreyList.push("Shoes" + i++);
+		}
+		console.log("testing");
 
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+		this.awesomeThings = [
+			'HTML5 Boilerplate',
+			'AngularJS',
+			'Karma'
+		];
+		
+		})
