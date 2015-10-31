@@ -1,1 +1,29 @@
-<p>This is the about view.</p>
+<h1>Goodwill Consumer Tracking Form</h1>
+
+<p>Please submit the customer's email address, phone number, and zipcode so that they can recieve email updates on consumer promotions!</p>
+<!-- EMAIL -->
+<div class="form-group">
+    <label>Email</label>
+    <input type="email" name="email" class="form-control" ng-model="user.email" required>
+</div>
+
+<!-- NAME -->
+<div class="form-group">
+    <label>Phone Number</label>
+    <input type="text" name="name" class="form-control" ng-model="user.phone_number" required>
+</div>
+
+<!-- USERNAME -->
+<div class="form-group">
+    <label>Zipcode</label>
+    <input type="text" name="zipcode" class="form-control" ng-model="user.zipcode">
+
+<br>
+
+<!-- SUBMIT BUTTON -->
+    <button type="submit" class="btn btn-primary btn-lg btn-block">
+      <span></span> Submit!
+    </button>
+
+</div>
+    
