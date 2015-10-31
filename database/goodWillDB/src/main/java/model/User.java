@@ -6,15 +6,15 @@ public class User {
 	private String name;
 	private String address;
 	private String phoneNum;
-	private Store prefLocation;
+	private int storeID;
 	private int QRid;
 
-	public User(String email, String name, String address, String phoneNum, Store prefLocation, int QRid) {
+	public User(String email, String name, String address, String phoneNum, int storeID, int QRid) {
 		this.email = email;
 		this.name = name;
 		this.address = address;
 		this.phoneNum = phoneNum;
-		this.prefLocation = prefLocation;
+		this.storeID = storeID;
 		this.QRid = QRid;
 	}
 
@@ -39,8 +39,8 @@ public class User {
 		this.phoneNum = phoneNum;
 	}
 
-	public void setPrefLocation(Store prefLocation) {
-		this.pregLocation = prefLocation;
+	public void setPrefLocation(int storeID) {
+		this.storeID = storeID;
 	}
 
 	public void setQRid(int QRid) {
@@ -63,8 +63,8 @@ public class User {
 		return phoneNum;
 	}
 	
-	public Store getPrefLocation() {
-		return prefLocation;
+	public int getStoreID() {
+		return storeID;
 	}
 
 	public int getQRid() {
