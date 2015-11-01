@@ -8,6 +8,7 @@
  * Controller of the gwJpmc8App
  */
 angular.module('gwJpmc8App')
+<<<<<<< HEAD
 	.controller('MainCtrl', function($scope, user, $http) {
 		var dress = "dress";
 
@@ -48,3 +49,13 @@ angular.module('gwJpmc8App')
 		];
 		
 		})
+=======
+  .controller('MainCtrl', function () {
+    this.awesomeThings = [
+      'HTML5 Boilerplate',
+      'AngularJS',
+      'Karma'
+    ];
+
+  });
+>>>>>>> 72e120ef8d4a8a7b3245dcfe7f2b193339932d19

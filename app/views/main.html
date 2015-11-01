@@ -1,23 +1,493 @@
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+<div>
+ <h1>Donations Deduction Calculator</h1>
+
+ <div class="col-md-2">
+   <img src="https://canew.global.ssl.fastly.net/files/logos/goodwill-store_logo_733.jpg" width="100" height="100">
+ </div>
+ 
+ <div class="list col-md-8">
+   <p style="float: right;">Enter information about your donation below to get an estimation for tax deduction purposes! Remember that every donation you make helps us to empower individuals with the skills they need to succeed. Thanks to your help we have been able to place over 26.4 million people into jobs that are fulfilling and foster financial stability.</p>
+   <br style="clear:both;">
 </div>
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
+<div class="col-md-6">
 
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
+   <!-- Tops -->
 
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
+   <h3>Tops</h3>
+
+   <!-- Shirts/Blouses -->
+
+  <form class="form-inline" role="form">
+
+    <div class="form-group">
+      <div class="checkbox">
+        <label><input type="checkbox"> Shirts/blouses</label>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <select class="form-control">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <select class="form-control" id="gender">
+        <option value="womens">Women's</option>
+        <option value="mens">Men's</option>
+        <option value="childrens">Children's</option>
+      </select>
+    </div>
+ 
+  </form>
+
+  <!-- Sweaters -->
+
+  <form class="form-inline" role="form">
+
+    <div class="form-group">
+      <div class="checkbox">
+        <label><input type="checkbox"> Sweaters</label>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <select class="form-control">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <select class="form-control" id="gender">
+        <option value="womens">Women's</option>
+        <option value="mens">Men's</option>
+        <option value="childrens">Children's</option>
+      </select>
+    </div>
+ 
+  </form>
+
+    <!-- T-shirts-->
+
+  <form class="form-inline" role="form">
+
+    <div class="form-group">
+      <div class="checkbox">
+        <label><input type="checkbox"> T-shirts</label>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <select class="form-control">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <select class="form-control" id="gender">
+        <option value="womens">Women's</option>
+        <option value="mens">Men's</option>
+        <option value="childrens">Children's</option>
+      </select>
+    </div>
+ 
+  </form>
+
+    <!-- Tanks -->
+
+  <form class="form-inline" role="form">
+
+    <div class="form-group">
+      <div class="checkbox">
+        <label><input type="checkbox"> Tanks</label>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <select class="form-control">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <select class="form-control" id="gender">
+        <option value="womens">Women's</option>
+        <option value="mens">Men's</option>
+        <option value="childrens">Children's</option>
+      </select>
+    </div>
+ 
+  </form>
+
+    <!-- Vests -->
+
+  <form class="form-inline" role="form">
+
+    <div class="form-group">
+      <div class="checkbox">
+        <label><input type="checkbox"> Vests</label>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <select class="form-control">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <select class="form-control" id="gender">
+        <option value="womens">Women's</option>
+        <option value="mens">Men's</option>
+        <option value="childrens">Children's</option>
+      </select>
+    </div>
+ 
+  </form>
+
+  <!-- Bottoms -->
+
+  <h3>Bottoms</h3>
+
+    <!-- Casual -->
+
+  <form class="form-inline" role="form">
+
+    <div class="form-group">
+      <div class="checkbox">
+        <label><input type="checkbox"> Casual</label>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <select class="form-control">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <select class="form-control" id="gender">
+        <option value="womens">Women's</option>
+        <option value="mens">Men's</option>
+        <option value="childrens">Children's</option>
+      </select>
+    </div>
+ 
+  </form>
+
+  <!-- Dress -->
+
+  <form class="form-inline" role="form">
+
+    <div class="form-group">
+      <div class="checkbox">
+        <label><input type="checkbox"> Dress</label>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <select class="form-control">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <select class="form-control" id="gender">
+        <option value="womens">Women's</option>
+        <option value="mens">Men's</option>
+        <option value="childrens">Children's</option>
+      </select>
+    </div>
+ 
+  </form>
+
+<!-- Shorts -->
+
+  <form class="form-inline" role="form">
+
+    <div class="form-group">
+      <div class="checkbox">
+        <label><input type="checkbox"> Shorts</label>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <select class="form-control">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <select class="form-control" id="gender">
+        <option value="womens">Women's</option>
+        <option value="mens">Men's</option>
+        <option value="childrens">Children's</option>
+      </select>
+    </div>
+ 
+  </form>
+
+  <!-- Skirts -->
+
+  <form class="form-inline" role="form">
+
+    <div class="form-group">
+      <div class="checkbox">
+        <label><input type="checkbox"> Skirts</label>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <select class="form-control">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <select class="form-control" id="gender">
+        <option value="womens">Women's</option>
+        <option value="childrens">Children's</option>
+      </select>
+    </div>
+ 
+  </form>
+
+  <!-- Jeans -->
+
+  <form class="form-inline" role="form">
+
+    <div class="form-group">
+      <div class="checkbox">
+        <label><input type="checkbox"> Jeans</label>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <select class="form-control">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <select class="form-control" id="gender">
+        <option value="womens">Women's</option>
+        <option value="mens">Men's</option>
+        <option value="childrens">Children's</option>
+      </select>
+    </div>
+ 
+  </form>
+
+  <!-- Dresses -->
+
+  <h3>Dresses</h3>
+
+  <!-- Everyday -->
+
+  <form class="form-inline" role="form">
+
+    <div class="form-group">
+      <div class="checkbox">
+        <label><input type="checkbox"> Everyday</label>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <select class="form-control">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <select class="form-control" id="gender">
+        <option value="womens">Women's</option>
+        <option value="childrens">Children's</option>
+      </select>
+    </div>
+ 
+  </form>
+
+  <!-- Evening wear -->
+
+  <form class="form-inline" role="form">
+
+    <div class="form-group">
+      <div class="checkbox">
+        <label><input type="checkbox"> Evening wear</label>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <select class="form-control">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <select class="form-control" id="gender">
+        <option value="womens">Women's</option>
+        <option value="mens">Men's</option>
+        <option value="childrens">Children's</option>
+      </select>
+    </div>
+ 
+  </form>
+
+  <!-- Shoes -->
+
+  <h3>Shoes</h3>
+
+  <!-- Tennis shoes -->
+
+  <form class="form-inline" role="form">
+
+    <div class="form-group">
+      <div class="checkbox">
+        <label><input type="checkbox"> Tennis shoes</label>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <select class="form-control">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <select class="form-control" id="gender">
+        <option value="womens">Women's</option>
+        <option value="mens">Men's</option>
+        <option value="childrens">Children's</option>
+      </select>
+    </div>
+ 
+  </form>
+
+  <!-- Sandles/Slippers -->
+
+  <form class="form-inline" role="form">
+
+    <div class="form-group">
+      <div class="checkbox">
+        <label><input type="checkbox"> Sandals/Slippers</label>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <select class="form-control">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <select class="form-control" id="gender">
+        <option value="womens">Women's</option>
+        <option value="mens">Men's</option>
+        <option value="childrens">Children's</option>
+      </select>
+    </div>
+ 
+  </form>
+
+  <!-- Boots -->
+
+  <form class="form-inline" role="form">
+
+    <div class="form-group">
+      <div class="checkbox">
+        <label><input type="checkbox"> Boots</label>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <select class="form-control">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <select class="form-control" id="gender">
+        <option value="womens">Women's</option>
+        <option value="mens">Men's</option>
+        <option value="childrens">Children's</option>
+      </select>
+    </div>
+ 
+  </form>
+
+  <h2>Your deductions total: </h2>
+
+  <!-- SUBMIT BUTTON -->
+    <button type="submit" class="btn btn-primary">
+      <span></span> Submit!
+    </button>
+
+    <button type="print" class="btn btn-success">
+      <span></span> Print!
+    </button>
+
+
+
+ </div>
 </div>
